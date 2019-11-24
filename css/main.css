@@ -334,6 +334,63 @@ div.xd-banner{
   }
 
   
+     /* Android Download Banner */
+div.android-banner{
+	width: 90%;
+	height: 170px;
+	clear: both;
+	margin-top: 20px;
+	background: #18957E;
+	border-radius: 15px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-right: 10%;
+	padding-left: 9.5%;
+	display: flex;
+	flex-flow: row;
+	flex-grow: 1;
+  }
+  /* Banner Items */
+  .android-img{
+	display: block;
+	width: 70px;
+	height: 70px;
+	align-self: center;
+  }
+
+  .android-desc{
+	margin-right: 50px;
+	display: block;
+	margin-top: 50px;
+	margin-left: 5%;
+  }
+
+  .btnDownloadAndroid{
+	width: 180px;
+	height: 50px;
+	margin-top: 60px;
+	border-radius: 25px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 2px solid #3DDC84;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	background: none;
+  }
+  
+  .btnDownloadAndroid:hover{
+	background: #3DDC84;
+	box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.137);
+  }
+  
+  .btnDownloadAndroid:active{
+	background: rgb(187, 187, 187);
+	color: white;
+	border: none;
+  }
   
   
   /* Footer Section */
