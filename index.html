@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Value Inspecto</title>
+  <meta name="description" content="We develop custom mobile Apps, websites and Graphic Designs, that will meet your requirements ...">
+	<meta name="keywords" content="softwindev,softwindevs,naik-waqar,SoftWIN-Dev,Sotwindevs,naik waqar, waqar naik">
+	<meta name="author" content="Naik Waqar">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+  <script src="scripts/main.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body background="images/bg.png">
+
+  <!-- Naviagtion  -->
+  <div class="navigation-bar">
+    <div id="navigation-container">
+      <img src="images/main_logo.png">
+      <ul>
+        <li><a href="https://softwindevs.github.io/#about"><i class="icon fa fa-info-circle fa-2x"></i><b>About Me</b></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Section  -->
+  <div class="main-section">
+
+    <div class="child-section">
+
+      <div class="column-div1">
+        <label class="lbl1">
+          <input class="EdtValue" type="number" id="tvValue" placeholder="Enter value" required />
+          <b><label class="changing-lblunits" id="lblunits">Pixel [px]</label></b>
+          <button class="btnchangeUnit" id="btnChangeUnits" onclick="changeUnits()" >Change Unit</button>
+        </label>
+      </div>
+
+      <div class="column-div2">
+        <label class="row2">
+          <b class="boldColor">Select Density [dpi]</b>
+          <select id="densityValue" class="dropdown">
+            <option value="v1" selected>ldpi ~120</option>
+            <option value="v2">mdpi ~160</option>
+            <option value="v3">tvdpi ~213</option>
+            <option value="v4">hdpi ~240</option>
+            <option value="v5">xhdpi ~320</option>
+            <option value="v6">xxhdpi ~480</option>
+            <option value="v7">xxxhdpi ~640</option>
+          </select>
+        </label>
+        <p class="note"> &#9888; <i> Density will only work with <b>px value</b>.</i></p>
+        <button class="btnconvertValue" id="btnconvertValue" type="submit" onclick="calculatevalues()"  uxp-variant="cta">CONVERT VALUE</button>
+      </div>
+
+    </div>
+
+
+    <div class="child-section" class="cards-row">
+
+      <div class="cards-row1">
+        <div class="card">
+          <b class="boldColor-White">Pixel [px]</b><br /><br /><br />
+          <p id="pxtxt" class="UnitsLabel">00.00</p>
+        </div>
+        <div class="card">
+          <b class="boldColor-White">Density Pixel [dp]</b><br /><br />
+          <p id="dptxt" class="UnitsLabel">00.00</p>
+        </div>
+        <div class="card">
+          <b class="boldColor-White">Scale Pixel [sp]</b><br /><br />
+          <p id="sptxt" class="UnitsLabel">00.00</p>
+        </div>
+      </div>
+
+      <div class="cards-row2">
+        <div class="card">
+          <b class="boldColor-White">Point [pt]</b><br /><br /><br />
+          <p id="pttxt" class="UnitsLabel">00.00</p>
+        </div>
+        <div class="card">
+          <b class="boldColor-White">MilliMeter [mm]</b><br /><br />
+          <p id="mmtxt" class="UnitsLabel">00.00</p>
+        </div>
+        <div class="card">
+          <b class="boldColor-White">Inches [in]</b><br /><br />
+          <p id="intxt" class="UnitsLabel">00.00</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- XD Plugin Download Section  -->
+    <div class="xd-banner">
+      <img class="xd-img" src="images/adobexd-logo.svg" alt="Adobe XD">
+      <div class="xd-desc">
+        <b class="boldColor-White">Get Value Inspecto Plugin for XD</b>
+        <p style="color: white; font-size: 16px;">The plugin to help you in Development to convert values in your
+          project.</p>
+      </div>
+      <button class="btnDownloadPlugin" onclick=" window.open('http://google.com','_blank')">Download</button>
+    </div>
+
+
+    <!-- Footer Section  -->
+    <div class="footer">
+      <p class="p-footer">Developed with &#128153; by <a style="font-weight: 600; color: #2CABFF;" target="_blank"
+          href="http://softwindevs.github.io">Softwindevs</a>.</p>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>

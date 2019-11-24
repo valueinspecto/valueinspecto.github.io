@@ -1,0 +1,601 @@
+
+
+/* Screens Resolution : 1110px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 1110px) {
+
+	/*Child Section div*/
+	.child-section {
+		width: 100%;
+		margin-bottom: 50px;
+	  }
+
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 3%;
+		margin-left: 15%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 15%;
+	}
+
+	.card {
+		width: 200px;
+		height: 180px;
+		margin-left: 35px;
+	}
+	
+
+	/* Main Section Column 1 & 2 */
+	.column-div1{
+	margin-left: 12%;
+  	}
+  
+  	.column-div2{
+	margin-left: 12%;
+  	}
+
+
+}
+
+
+/* Screens Resolution : 1060px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 1060px) {
+
+	/*Child Section div*/
+	.child-section {
+		height: 380px;
+		margin-bottom: 80px;
+	  }
+
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 13%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 13%;
+	}
+
+	.card {
+		width: 200px;
+		height: 180px;
+		margin-left: 35px;
+	}
+	
+
+
+}
+
+
+/* Screens Resolution : 990px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 1012px) {
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 13%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 13%;
+	}
+
+	.card {
+		width: 180px;
+		height: 180px;
+		margin-left: 35px;
+	}
+	
+
+
+}
+
+
+/* Screens Resolution : 900px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 13%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 13%;
+	}
+
+	.card {
+		width: 160px;
+		height: 180px;
+		margin-left: 35px;
+	}
+	
+	
+	/* Banner Items */
+	.xd-desc{
+		margin-right: 100px;
+		display: block;
+		margin-top: 50px;
+		margin-left: 5%;
+		margin-right: 2%;
+	}
+	  
+}
+
+
+/* Screens Resolution : 840px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 840px) {
+
+	/*Child Section div*/
+	.child-section {
+		width: 100%;
+		height: 340px;
+	  }
+
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 13%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 13%;
+	}
+
+	.card {
+		width: 140px;
+		height: 160px;
+		margin-left: 35px;
+	}
+	
+
+}
+
+
+/* Screens Resolution : 760px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 760px) {
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 8%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 8%;
+	}
+
+	.card {
+		width: 140px;
+		height: 160px;
+		margin-left: 35px;
+	}
+
+ 	/* XD Plugin Download Banner */
+	div.xd-banner{
+		height: 300px;
+		clear: none;
+		display: table;
+ 	 }
+ 	 /* Banner Items */
+  	.xd-img{
+		display: block;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+ 	 }
+  
+  	.xd-desc{
+		display: block;
+		margin-top: 20px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 5%;
+		padding-right: 5%;
+ 	 }
+  
+  	.btnDownloadPlugin{
+		display: block;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+ 	 }
+	
+}
+
+
+/* Screens Resolution : 670px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 670px) {
+
+	/*Child Section div*/
+	.child-section {
+		width: 100%;
+		height: 300px;
+	  }
+
+
+	   /* Density DropDown */
+  	.dropdown{
+		width: 160px;
+ 	 }
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 1%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 1%;
+	}
+
+	.card {
+		width: 130px;
+		height: 150px;
+		margin-left: 35px;
+	padding: 3% 3%;
+	}
+	
+	/* Main Section Column 1 & 2 */
+	.column-div1{
+		margin-left: 5%;
+	}
+	  
+	.column-div2{
+		margin-left: 5%;
+	}
+
+}
+
+
+/* Screens Resolution : 580px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 580px) {
+
+
+	/* Enter Value Editext */
+	input.EdtValue {
+		width: 25%;
+		height: 45px;
+  	}
+
+  	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: -2%;
+	}
+	  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: -2%;
+	}
+
+	.card {
+		width: 120px;
+		height: 150px;
+		margin-left: 35px;
+	padding: 2% 2%;
+	}
+	
+	/* Main Section Column 1 & 2 */
+	.column-div1{
+		margin-left: 5%;
+	}
+	  
+	.column-div2{
+		margin-left: 5%;
+	}
+
+}
+
+
+/* Screens Resolution : 530px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 530px) {
+
+	/* Navigation Bar */
+	.navigation-bar li a {
+		font-size: 14px;
+		padding: 0px 10px;
+	}
+
+	.navigation-bar ul {
+		padding: 0px;
+		margin: 1% 0 0 0;
+		text-align: right;
+	}
+
+	.navigation-bar li i {
+		display: inline-block;
+	}
+	.navigation-bar li b {
+		display: none;
+	}
+
+	b.boldColor-White{
+		font-size: 16px;
+	}
+
+	
+	/* Enter Value Editext */
+	input.EdtValue {
+		width: 25%;
+		height: 45px;
+	}
+
+  	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 0%;
+	}
+  
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 0%;
+	}
+
+	.card {
+		width: 120px;
+		height: 150px;
+		margin-left: 12px;
+		padding: 2% 2%;
+	}
+
+	/* Main Section Column 1 & 2 */
+	.column-div1{
+		margin-left: 5%;
+	}
+  
+	.column-div2{
+		margin-left: 5%;
+	}
+
+}
+
+
+/* Screens Resolution : 460px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 460px) {
+
+	/*Child Section div*/
+	.child-section {
+		width: 100%;
+		height: 300px;
+	  }
+
+
+	.navigation-bar ul {
+		padding: 0px;
+		margin: 1% 5% 0 0;
+		text-align: right;
+	  }
+
+	/* Button Change Units */
+	.btnchangeUnit {
+		width: 145px;
+		height: 45px;
+		margin-left: 0px;
+		margin-top: 12px;
+	}
+
+
+	/* Enter Value Editext */
+	input.EdtValue {
+	width: 30%;
+	height: 45px;
+	}
+
+	/* Density DropDown */
+	.dropdown{
+		width: 200px;
+		height: 45px;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 3%;
+	}
+	
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 3%;
+	}
+
+	.card {
+		width: 100px;
+		height: 140px;
+		margin-left: 12px;
+		padding: 2% 2%;
+	}
+
+	/* Main Section Column 1 & 2 */
+	.column-div1{
+		margin-left: 5%;
+	}
+	
+	.column-div2{
+		margin-left: 5%;
+	}
+
+}
+
+
+/* Screens Resolution : 400px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 400px) {
+
+	/*Child Section div*/
+	.child-section {
+		margin-top: 5%;
+	  }
+
+	.navigation-bar ul {
+		padding: 0px;
+		margin: 2% 0% 0 0;
+		text-align: right;
+	  }
+
+	/* Button Change Units */
+	.btnchangeUnit {
+		width: 145px;
+		height: 45px;
+		margin-left: 0px;
+		margin-top: 12px;
+	}
+
+
+
+	/* Enter Value Editext */
+	input.EdtValue {
+		width: 30%;
+		height: 45px;
+	}
+
+	/* Density DropDown */
+	.dropdown{
+		width: 200px;
+		height: 45px;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 0%;
+		margin-left: 1%;
+	}
+	
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 1%;
+	}
+
+	.card {
+		width: 80px;
+		height: 140px;
+		margin-left: 12px;
+		padding: 2% 2%;
+	}
+
+	/* Main Section Column 1 & 2 */
+	.column-div1{
+		margin-left: 5%;
+	}
+	
+	.column-div2{
+		margin-left: 5%;
+	}
+
+}
+
+
+/* Screens Resolution : 330px
+-------------------------------------------------------------------------- */
+@media screen and (max-width: 330px) {
+
+	.navigation-bar ul {
+		padding: 0px;
+		margin: 2% 0 0 0;
+		text-align: right;
+	  }
+
+	/* Button Change Units */
+	.btnchangeUnit {
+		width: 145px;
+		height: 45px;
+		margin-left: 0px;
+		margin-top: 12px;
+	}
+
+
+	/* Enter Value Editext */
+	input.EdtValue {
+		width: 30%;
+		height: 45px;
+	}
+
+	/* Density DropDown */
+	.dropdown{
+		width: 200px;
+		height: 45px;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	/* cards rows & cards */
+	.cards-row1{
+		float: left;
+		margin-top: 5%;
+		margin-left: 0%;
+	}
+	
+	.cards-row2{
+		float: left;
+		margin-top: 25px;
+		margin-left: 0%;
+	}
+
+	.card {
+		width: 75px;
+		height: 140px;
+		margin-left: 12px;
+		padding: 2% 2%;
+	}
+
+	/* Main Section Column 1 & 2 */
+	.column-div1{
+		margin-left: 5%;
+	}
+	
+	.column-div2{
+		margin-left: 5%;
+	}
+
+}
