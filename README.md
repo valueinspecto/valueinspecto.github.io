@@ -1,2 +1,2 @@
 # valueinspecto.github.io
-xd plugin
+Convert Values in Projects.
