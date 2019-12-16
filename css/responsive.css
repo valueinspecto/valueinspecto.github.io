@@ -369,6 +369,10 @@ div.android-banner{
 		margin-left: 5%;
 	}
 
+	.p-footer{
+		font-size: 15px;
+	}
+
 }
 
 
@@ -505,6 +509,10 @@ div.android-banner{
 	
 	.column-div2{
 		margin-left: 5%;
+	}
+
+	.p-footer{
+		font-size: 12px;
 	}
 
 }
