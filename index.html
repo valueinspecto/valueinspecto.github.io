@@ -8,73 +8,85 @@
   <title>Value Inspecto</title>
   <meta name="description" content="The tool to help you convert any values in your projects.">
   <meta name="google-site-verification" content="4lgO-WnlFKYlhzs_hHszrMs_EOz6W_r5q1k7YpLzV2Y" />
-	<meta name="keywords" content="value inspecto,pxtodp,converter,naik-waqar,SoftWIN Dev,Sotwindevs,naik waqar, waqar naik, screenspecto">
-	<meta name="google-site-verification" content="4lgO-WnlFKYlhzs_hHszrMs_EOz6W_r5q1k7YpLzV2Y" />
-	<meta name="author" content="Naik Waqar">
+  <meta name="keywords"
+    content="value inspecto,pxtodp,converter,naik-waqar,SoftWIN Dev,Sotwindevs,naik waqar, waqar naik, screenspecto">
+  <meta name="google-site-verification" content="4lgO-WnlFKYlhzs_hHszrMs_EOz6W_r5q1k7YpLzV2Y" />
+  <meta name="author" content="Naik Waqar">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="./css/responsive.css">
   <script src="scripts/main.js"></script>
   <link rel="icon" type="image/png" href="images/favicon.png">
-	<script data-ad-client="ca-pub-9921251403225584" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <script data-ad-client="ca-pub-9921251403225584" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9921251403225584",
+    enable_page_level_ads: true
+  });
+  </script> -->
+</head>
 
-		<script type="text/javascript">//<![CDATA[ 
-(function() {
-    var configuration = {
-    "token": "65f2fd8b1c7d6f6ffa743b50281e01f5",
-    "excludeDomains": [
-        "valueinspecto.github.io"
-    ],
-    "capping": {
-        "limit": 5,
-        "timeout": 24
-    },
-    "exitScript": {
-        "enabled": true
-    },
-    "popUnder": {
-        "enabled": true
-    }
-};
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = '//cdn.shorte.st/link-converter.min.js';
-    script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
-    var entry = document.getElementsByTagName('script')[0];
-    entry.parentNode.insertBefore(script, entry);
-})();
-//]]></script>
-	
-	</head>
+<body background="images/bg_main.png">
 
-<body background="images/bg.png">
-	
   <!-- Naviagtion  -->
   <div class="navigation-bar">
     <div id="navigation-container">
       <img src="images/main_logo.png">
       <ul>
-        <li><a href="https://softwindevs.github.io/#about"><i class="icon fa fa-info-circle fa-2x"></i><b>About Me</b></a></li>
+        <li><a href="https://softwindevs.github.io/#about" title="About Me"><i
+              class="icon fa fa-info-circle fa-2x"></i><b>About Me</b></a></li>
       </ul>
     </div>
   </div>
 
-  <!-- Main Section  -->
-  <div class="main-section">
+  <!-- Float Modal Button  -->
+  <a id="showTips" onclick="showTips()" class="float">
+    <span class="tooltiptext">Some Tips</span>
+    <i class="fa fa-question my-float" aria-hidden="true"></i>
+  </a>
 
-    <div class="child-section">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
-      <div class="column-div1">
-        <label class="lbl1">
-          <input class="EdtValue" type="number" id="tvValue" placeholder="Enter value" required />
-          <b><label class="changing-lblunits" id="lblunits">Pixel [px]</label></b>
-          <button class="btnchangeUnit" id="btnChangeUnits" onclick="changeUnits()" >Change Unit</button>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <b style="font-size: 22px;">&#128161; Tips:</b><br><br>
+      <p>1. All values are calculated, with respect to <b>Density[dpi]</b> value.</p>
+      <p>2. <b>ScalePixel[sp]</b> values are same as <b>DensityPixel[dp]</b>, they change when device font changes.</p>
+      <p>3. <b>16 px</b> is the default base/root value.</p>
+      <p>4. <b>Element [em]</b> is relative to the font-size of its direct or nearest parent.</p>
+      <p>5. <b>Root Element [rem]</b> is only relative to the html (root) font-size.</p> 
+    </div>
+
+  </div>
+
+  <!-- Section1  -->
+  <div class="box">
+    <div class="cal-div">
+
+      <div>
+        <label>
+          <input class="EdtText EdtValue" type="number" id="tvValue" placeholder="Enter value" required />
+          <label>
+            <select id="unitsValue" class="dropdown units">
+              <option value="Pixel [px]" selected>Pixel [px]</option>
+              <option value="Density Pixel [dp]">Density Pixel [dp]</option>
+              <option value="Scale Pixel [sp]">Scale Pixel [sp]</option>
+              <option value="Root Element [rem/em]">Root Element [rem/em]</option>
+              <option value="Point [pt]">Point [pt]</option>
+              <option value="Millimeter [mm]">Millimeter [mm]</option>
+              <option value="Centimeter [cm]">Centimeter [cm]</option>
+              <option value="Inches [in]">Inches [in]</option>
+            </select>
+          </label>
         </label>
       </div>
 
-      <div class="column-div2">
-        <label class="row2">
+      <div class="cal-child">
+        <label>
           <b class="boldColor">Select Density [dpi]</b>
-          <select id="densityValue" class="dropdown">
+          <select id="densityValue" onchange="DpiDropDown(this);" class="dropdown dpi">
             <option value="v1" selected>ldpi ~120</option>
             <option value="v2">mdpi ~160</option>
             <option value="v3">tvdpi ~213</option>
@@ -82,81 +94,124 @@
             <option value="v5">xhdpi ~320</option>
             <option value="v6">xxhdpi ~480</option>
             <option value="v7">xxxhdpi ~640</option>
+            <option value="v8">Custom dpi</option>
           </select>
         </label>
-        <p class="note"> &#9888; <i> Density will only work with <b>px value</b>.</i></p>
-        <button class="btnconvertValue" id="btnconvertValue" type="submit" onclick="calculatevalues()"  uxp-variant="cta">CONVERT VALUE</button>
+        <input class="EdtText EdtDpi" type="number" id="customDpi" placeholder="dpi value" required />
+      </div>
+
+      <div class="cal-child">
+        <label>
+          <b class="boldColor">Root Pixel Value</b>
+          <input class="EdtText EdtRoot" type="number" id="rootValue" value="16" placeholder="Enter value" required />
+        </label>
+        </label>
+        <button class="btnconvertValue" id="btnconvertValue" type="submit" onclick="calculatevalues()"
+          uxp-variant="cta">CONVERT VALUE</button>
       </div>
 
     </div>
+  </div>
 
+  <p class="units-heading"><b>CALCULATED UNITS</b></p>
 
-    <div class="child-section" class="cards-row">
+  <!--Card Section1  -->
+  <div class="box card-section">
 
-      <div class="cards-row1">
+    <ul class="cards">
+
+      <li class="cards_item">
         <div class="card">
-          <b class="boldColor-White">Pixel [px]</b><br /><br /><br />
+          <b class="boldColor-White">Pixel [px]</b><br /><br />
           <p id="pxtxt" class="UnitsLabel">00.00</p>
         </div>
+      </li>
+
+      <li class="cards_item">
         <div class="card">
-          <b class="boldColor-White">Density Pixel [dp]</b><br /><br />
+          <b class="boldColor-White">Density Pixel [dp]</b><br />
           <p id="dptxt" class="UnitsLabel">00.00</p>
         </div>
+      </li>
+
+      <li class="cards_item">
         <div class="card">
-          <b class="boldColor-White">Scale Pixel [sp]</b><br /><br />
+          <b class="boldColor-White">Scale Pixel [sp]</b><br />
           <p id="sptxt" class="UnitsLabel">00.00</p>
         </div>
-      </div>
+      </li>
 
-      <div class="cards-row2">
+      <li class="cards_item">
         <div class="card">
-          <b class="boldColor-White">Point [pt]</b><br /><br /><br />
+          <b class="boldColor-White">Root Element [em/rem]</b>
+          <p id="remtxt" class="UnitsLabel">00.00</p>
+        </div>
+      </li>
+
+      <li class="cards_item">
+        <div class="card">
+          <b class="boldColor-White">Point [pt]</b><br /><br />
           <p id="pttxt" class="UnitsLabel">00.00</p>
         </div>
+      </li>
+
+      <li class="cards_item">
         <div class="card">
-          <b class="boldColor-White">MilliMeter [mm]</b><br /><br />
+          <b class="boldColor-White">Millimeter [mm]</b><br />
           <p id="mmtxt" class="UnitsLabel">00.00</p>
         </div>
+      </li>
+
+      <li class="cards_item">
+        <div class="card">
+          <b class="boldColor-White">Centimeter [cm]</b><br />
+          <p id="cmtxt" class="UnitsLabel">00.00</p>
+        </div>
+      </li>
+
+      <li class="cards_item">
         <div class="card">
           <b class="boldColor-White">Inches [in]</b><br /><br />
           <p id="intxt" class="UnitsLabel">00.00</p>
         </div>
-      </div>
-    </div>
+      </li>
 
-
-    <!-- XD Plugin Download Section  -->
-    <div class="xd-banner">
-      <!-- <img class="xd-img" src="images/adobexd-logo.svg" alt="Adobe XD"> -->
-      <div class="xd-desc">
-        <b class="boldColor-White">Get Value Inspecto Plugin for Adobe XD</b>
-        <p style="color: white; font-size: 16px;">The plugin to help you in Development to convert values in your
-          project.</p>
-      </div>
-      <button class="btnDownloadPlugin" onclick=" window.open('https://xd.adobelanding.com/en/xd-plugin-download/?name=2b3b05b2','_blank')" >Download</button>
-    </div>
-
-
-     <!-- Android Download Section  -->
-     <div class="android-banner" >
-      <!-- <img class="android-img" src="images/android-logo.svg" alt="Android"> -->
-      <div class="android-desc">
-        <b class="boldColor-White">Get ScreenSpecto App</b>
-        <p style="color: white; font-size: 16px;">The android app to convert values for your project & check (density, size, Frame rate and much more ).</p>
-      </div>
-      <button class="btnDownloadAndroid" onclick=" window.open('https://play.google.com/store/apps/details?id=com.softwindevs.screenspecto','_blank')" >Download</button>
-    </div>
-
-
-    <!-- Footer Section  -->
-    <div class="footer">
-      <p class="p-footer">Developed with &#128153; by <a class="a-footer" target="_blank"
-          href="http://softwindevs.github.io">Softwindevs</a>. |  <a class="a-footer" target="_blank"
-          href="https://sites.google.com/view/value-inspecto/privacy-policy">Privacy Policy</a>.</p> 
-    </div>
-
+    </ul>
   </div>
 
+  <!-- XD Plugin Download Section  -->
+  <div class="xd banner">
+    <img class="banner-img" src="images/xd-logo.svg" alt="Adobe XD">
+    <div class="banner-desc">
+      <b class="boldColor-White">Get Value-Inspecto Plugin For Adobe XD</b>
+      <p style="color: white; font-size: 16px;">The plugin that help you in Development to convert values in your
+        project.</p>
+    </div>
+    <button class="btnDownload btnDownloadPlugin"
+      onclick=" window.open('https://xd.adobelanding.com/en/xd-plugin-download/?name=2b3b05b2','_blank')">Download</button>
+  </div>
+
+  <!-- Android Download Section  -->
+  <div class="app banner">
+    <img class="banner-img" src="images/android-logo.svg" alt="Android">
+    <div class="banner-desc">
+      <b class="boldColor-White">Get ScreenSpecto App</b>
+      <p style="color: white; font-size: 16px;">The android app to convert values for your project & check (density,
+        size, Frame rate and much more ).</p>
+    </div>
+    <button class="btnDownload btnDownloadAndroid"
+      onclick=" window.open('https://play.google.com/store/apps/details?id=com.softwindevs.screenspecto','_blank')">Download</button>
+  </div>
+
+  <!-- Footer Section  -->
+  <div class="footer">
+    <p class="p-footer">Developed with <p class="mylove">&#128153;</p><a class="a-footer" target="_blank"
+        href="http://softwindevs.github.io">Softwindevs</a> | 
+        <a class="a-footer" href="#footer" onclick="alert('Having issues or want to report a bug!\nContact us here: Softwindev@outlook.com');">Contact Us</a> | 
+        <a class="a-footer" target="_blank" href="https://sites.google.com/view/value-inspecto/privacy-policy">Privacy Policy</a>
+      <p>Version 1.1</p>
+      </p>
+  </div>
 
 </body>
 
