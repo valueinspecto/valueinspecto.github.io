@@ -9,8 +9,7 @@
   <meta name="description"
     content="An Advance tool to help you convert any values in your projects, from-to px, dp, sp, pt, rem, cm, mm, in.">
   <meta name="google-site-verification" content="4lgO-WnlFKYlhzs_hHszrMs_EOz6W_r5q1k7YpLzV2Y" />
-  <meta name="keywords"
-    content="valueinspecto, pxtodp, converter, waqarnaik, Sotwindevs, screenspecto">
+  <meta name="keywords" content="valueinspecto, pxtodp, converter, waqarnaik, Sotwindevs, screenspecto">
   <meta name="google-site-verification" content="4lgO-WnlFKYlhzs_hHszrMs_EOz6W_r5q1k7YpLzV2Y" />
   <meta name="author" content="Waqar Naik">
   <meta name="robots" conent="index, follow" />
@@ -46,7 +45,7 @@
       entry.parentNode.insertBefore(script, entry);
     })();
     //]]></script>
-    	<script type="application/ld+json">
+  <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
@@ -65,14 +64,14 @@
       <img src="images/main_logo.png">
       <ul>
         <li><a href="https://softwindevs.github.io/#about" title="About Me"><i
-              class="icon fa fa-info-circle fa-2x"></i><b>About Me</b></a></li>
+              class="icon fa fa-info-circle fa-2x"></i><b>About</b></a></li>
       </ul>
     </div>
   </div>
 
   <!-- Float Modal Button  -->
   <a id="showTips" onclick="showTips()" class="float">
-    <span class="tooltiptext">Some Tips</span>
+    <span class="tooltiptext">Some Quick Tips</span>
     <i class="fa fa-question my-float" aria-hidden="true"></i>
   </a>
 
@@ -82,7 +81,7 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <b style="font-size: 22px;">&#128161; Tips:</b><br><br>
+      <b style="font-size: 22px;">&#128161; Quick Tips:</b><br><br>
       <p>1. All values are calculated, with respect to <b>Density[dpi]</b> value.</p>
       <p>2. <b>ScalePixel[sp]</b> values are same as <b>DensityPixel[dp]</b>, they change when device font changes.</p>
       <p>3. <b>16 px</b> is the default base/root value.</p>
@@ -92,59 +91,57 @@
 
   </div>
 
-  <!-- Section1  -->
-  <div class="box">
-    <div class="cal-div">
+  <!-- Input Form Section -->
+  <div class="box box-form">
 
-      <div>
-        <label>
-          <input class="EdtText EdtValue" type="number" id="tvValue" placeholder="Enter value" required />
-          <label>
-            <select id="unitsValue" class="dropdown units">
-              <option value="Pixel [px]" selected>Pixel [px]</option>
-              <option value="Density Pixel [dp]">Density Pixel [dp]</option>
-              <option value="Scale Pixel [sp]">Scale Pixel [sp]</option>
-              <option value="Root Element [rem/em]">Root Element [rem/em]</option>
-              <option value="Point [pt]">Point [pt]</option>
-              <option value="Millimeter [mm]">Millimeter [mm]</option>
-              <option value="Centimeter [cm]">Centimeter [cm]</option>
-              <option value="Inches [in]">Inches [in]</option>
-            </select>
-          </label>
-        </label>
+    <div class="input-group2 custom-dropdown">
+      <input class="custom-textfield" style="margin-right: 8px;" type="number"
+        onkeypress="return /[0-9]/i.test(event.key)" id="tvValue" placeholder="Enter value" required>
+      <div class="custom-dropdown">
+        <select id="unitsValue">
+          <option value="Pixel [px]" selected>Pixel [px]</option>
+          <option value="Density Pixel [dp]">Density Pixel [dp]</option>
+          <option value="Scale Pixel [sp]">Scale Pixel [sp]</option>
+          <option value="Root Element [rem/em]">Root Element [rem/em]</option>
+          <option value="Point [pt]">Point [pt]</option>
+          <option value="Millimeter [mm]">Millimeter [mm]</option>
+          <option value="Centimeter [cm]">Centimeter [cm]</option>
+          <option value="Inches [in]">Inches [in]</option>
+        </select>
       </div>
-
-      <div class="cal-child">
-        <label>
-          <b class="boldColor">Select Density [dpi]</b>
-          <select id="densityValue" onchange="DpiDropDown(this);" class="dropdown dpi">
-            <option value="v1" selected>ldpi ~120</option>
-            <option value="v2">mdpi ~160</option>
-            <option value="v3">tvdpi ~213</option>
-            <option value="v4">hdpi ~240</option>
-            <option value="v5">xhdpi ~320</option>
-            <option value="v6">xxhdpi ~480</option>
-            <option value="v7">xxxhdpi ~640</option>
-            <option value="v8">Custom dpi</option>
-          </select>
-        </label>
-        <input class="EdtText EdtDpi" type="number" id="customDpi" placeholder="dpi value" required />
-      </div>
-
-      <div class="cal-child">
-        <label>
-          <b class="boldColor">Root Pixel Value</b>
-          <input class="EdtText EdtRoot" type="number" id="rootValue" value="16" placeholder="Enter value" required />
-        </label>
-        </label>
-        <button class="btnconvertValue" id="btnconvertValue" type="submit" onclick="calculatevalues()"
-          uxp-variant="cta">CONVERT VALUE</button>
-      </div>
-
     </div>
+
+    <div class="input-group custom-dropdown">
+      <label class="custom-label">Select Density (dpi)</label>
+      <div class="input-group3">
+        <select id="densityValue" onchange="DpiDropDown(this);">
+          <option value="v1" selected>ldpi ~120</option>
+          <option value="v2">mdpi ~160</option>
+          <option value="v3">tvdpi ~213</option>
+          <option value="v4">hdpi ~240</option>
+          <option value="v5">xhdpi ~320</option>
+          <option value="v6">xxhdpi ~480</option>
+          <option value="v7">xxxhdpi ~640</option>
+          <option value="v8">Custom dpi</option>
+        </select>
+        <input class="custom-textfield" style="width: 100%; margin-left: 8px; display: none;" type="number"
+          onkeypress="return /[0-9]/i.test(event.key)" id="customDpi" placeholder="dpi value" required>
+      </div>
+    </div>
+
+    <div class="input-group custom-dropdown">
+      <label class="custom-label">Root Pixel Value</label>
+      <input class="custom-textfield" type="number" onkeypress="return /[0-9]/i.test(event.key)" id="rootValue"
+        value="16" placeholder="Enter value" required>
+    </div>
+
+    <button class="custom-button" id="btnconvertValue" type="submit" onclick="calculatevalues()">Convert
+      Value</button>
+
+
   </div>
 
-  <p class="units-heading"><b>CALCULATED UNITS</b></p>
+  <p class="units-heading"><b>CONVERTED UNITS</b></p>
 
   <!--Card Section1  -->
   <div class="box card-section">
@@ -210,6 +207,18 @@
     </ul>
   </div>
 
+  <!-- Figma Plugin Download Section  -->
+  <div class="figma banner">
+    <img class="banner-img" src="images/figma-logo.svg" alt="Figma">
+    <div class="banner-desc">
+      <b class="boldColor-Black">Get Value-Inspecto Plugin For Figma</b>
+      <p style="color: #000000; font-size: 16px;">The plugin that help you in Development to convert values in your
+        project. More features coming soon...</p>
+    </div>
+    <button class="btnDownload btnDownloadFigma"
+      onclick=" window.open('https://www.figma.com/community/plugin/1341064203581677276/value-inspecto','_blank')">Download</button>
+  </div>
+
   <!-- XD Plugin Download Section  -->
   <div class="xd banner">
     <img class="banner-img" src="images/xd-logo.svg" alt="Adobe XD">
@@ -218,7 +227,7 @@
       <p style="color: white; font-size: 16px;">The plugin that help you in Development to convert values in your
         project.</p>
     </div>
-    <button class="btnDownload btnDownloadPlugin"
+    <button class="btnDownload btnDownloadXD"
       onclick=" window.open('https://exchange.adobe.com/apps/cc/2b3b05b2?pluginId=2b3b05b2','_blank')">Download</button>
   </div>
 
@@ -244,7 +253,7 @@
     |
     <a class="a-footer" target="_blank" href="https://sites.google.com/view/value-inspecto/privacy-policy">Privacy
       Policy</a>
-    <p>Version 1.1</p>
+    <p>Version 1.2</p>
     </p>
   </div>
 
